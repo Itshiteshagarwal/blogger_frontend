@@ -41,7 +41,7 @@ const handleSubmit = async (e) => {
 
     return (
         <div className='mt-2'>
-            <h2 className='my-2'>Are you a new user? Please sign up and enjoy our iNotebook app</h2>
+            <h2 className='my-2'>Are you a new user? Please sign up and enjoy our Blogger app</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email address</label>

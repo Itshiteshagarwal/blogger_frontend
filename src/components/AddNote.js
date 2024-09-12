@@ -19,7 +19,7 @@ const AddNote = () => {
         }
 
         try {
-            const uploadResponse = await fetch('http://localhost:5000/upload', {
+            const uploadResponse = await fetch('https://blogger-ugeq.onrender.com/upload', {
                 method: 'POST',
                 body: formData,
             });
@@ -40,7 +40,7 @@ const AddNote = () => {
                 image_url: uploadData.image_url,
             };
 
-            const noteResponse = await fetch('http://localhost:5000/addnote', {
+            const noteResponse = await fetch('https://blogger-ugeq.onrender.com/addnote', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

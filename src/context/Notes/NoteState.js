@@ -7,7 +7,7 @@ const NoteState = (props) => {
     // Method to fetch all notes from the database
     const fetchNotes = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/fetchnotes', {
+            const response = await fetch('https://blogger-ugeq.onrender.com/api/fetchnotes', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ const NoteState = (props) => {
     // Method to delete a note from the database
     const deleteNote = async (noteId) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/deletenote/${noteId}`, {
+            const response = await fetch(`https://blogger-ugeq.onrender.com/api/deletenote/${noteId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const NoteState = (props) => {
     // Method to edit a note in the database
     const editNote = async (noteId, formData) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/updatenote/${noteId}`, {
+            const response = await fetch(`https://blogger-ugeq.onrender.com/api/updatenote/${noteId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json' 
